@@ -1,3 +1,9 @@
+ // display current day on page
+
+ var todaysDate = moment().format('dddd, MMMM Do YYYY');
+ $('#currentDay').html(todaysDate);
+
+
 $(document).ready(function () {
     // listen for save button clicks
     $('.saveBtn').on('click', function () {
@@ -60,11 +66,6 @@ $(document).ready(function () {
     $('#hour-15 .description').val(localStorage.getItem('hour-15'));
     $('#hour-16 .description').val(localStorage.getItem('hour-16'));
     $('#hour-17 .description').val(localStorage.getItem('hour-17'));
-
-    // display current day on page
-
-
-    $('#currentDay').text(moment().format('dddd, MMMM Do'));
 
 
 });
